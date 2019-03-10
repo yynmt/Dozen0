@@ -1,9 +1,11 @@
 # Dozen0 ビルドガイド
 
-## 事前準備
+![](../images/buildguide_0-0.jpg)
+
+## 0. 事前準備
 
 ### キットの内容物
-![](../images/IMG_0008_e.png)
+![](../images/buildguide_0-1.jpg)
 
 || 名前 | 数量 | 備考 |
 |:---:|---|---:|---|
@@ -21,14 +23,14 @@
 |12|ゴム足|4|   |
 
 ### キット以外に必要な部品
-![](../images/IMG_0014_e.png)
+![](../images/buildguide_0-2.jpg)
 
 || 名前 | 数量 | 備考 |
 |:---:|---|---:|---|
 |1|キースイッチ|12|Cherry MXもしくはKailh Choc|
 |2|キーキャップ(1U)|12||
-|3|ProMicro|1|[遊舎工房][3a9e7862]|
-|4|コンスルー|2|[遊舎工房][3a9e7862]|
+|3|ProMicro|1|[遊舎工房][3a9e7862]より購入可能|
+|4|コンスルー|2|[遊舎工房][3a9e7862]より購入可能|
 |-|MicroUSBケーブル|1|   |
 
 [3a9e7862]: https://yushakobo.jp/shop/promicro-spring-pinheader/ "Pro Micro （スプリングピンヘッダ付き） | 遊舎工房"
@@ -43,13 +45,16 @@
   - 赤と黒をご用意ください。
   - PCBや各プレートの側面に塗ると見栄えがよくなります。
 
+### アイコンの説明
+|アイコン|説明|
+|:---:|---|
+|<img src="../images/icon_solder.png" width="32px">|ハンダ付けを必要とします。|
+|<img src="../images/icon_nipper.png" width="32px">|ニッパーを必要とします。|
+|<img src="../images/icon_screw.png" width="32px">|ネジ留めを必要とします。|
 
-- <img src="../images/icon_solder.png" width="32px"> - ハンダ付け
-- <img src="../images/icon_nipper.png" width="32px"> - ニッパー
-- <img src="../images/icon_screw.png" width="32px"> - ネジ留め
+---
 
-
-## 1. ソケットのハンダ付け<img src="../images/icon_solder.png" width="32px">
+## 1. ソケットのハンダ付け  <img src="../images/icon_solder.png" width="32px">
 PCBにソケットをハンダ付けします。
 ![](../images/IMG_0022_e.png)
 キットには2種類のソケット、Cherry MX用とKailh Choc用が同梱しています。
@@ -66,7 +71,9 @@ PCB裏面の白枠に合わせて12個(24個)のソケットをハンダ付け�
     PCBからソケットが浮かないように気を付けてください。
     PCBからソケットが浮いてしまうとボトムプレートと干渉します。
 
-## 2. リセットスイッチのハンダ付け<img src="../images/icon_nipper.png" width="32px"><img src="../images/icon_solder.png" width="32px">
+---
+
+## 2. リセットスイッチのハンダ付け  <img src="../images/icon_nipper.png" width="32px"> <img src="../images/icon_solder.png" width="32px">
 PCBにリセットスイッチをハンダ付けします。
 ![](../images/IMG_0033_e.png)
 リセットスイッチの足がボトムプレートに干渉するため、事前に足をニッパーで少し切ります。
@@ -75,10 +82,21 @@ PCBに何度か足を差し込みながら切る長さを確認するとよい�
 ![](../images/IMG_0038_e.png)
 PCB表面からリセットスイッチを取り付け、PCB裏面からハンダ付けします。
 
-## 3. ProMicroのハンダ付け<img src="../images/icon_solder.png" width="32px">
+---
+
+## 3. ProMicroのハンダ付け  <img src="../images/icon_solder.png" width="32px">
 ProMicroとコンスルーをハンダ付けします。
 
-`ここにコンスルーの向きについての画像`
+|![](../images/IMG_0048_e.png)|![](../images/IMG_0052_e.png)|
+|---|---|
+
+コンスルーには推奨される取り付け向きがあります。
+画像のようにコンスルー側面の四角い穴がProMicroに寄った向きで取り付けます。
+さらに、2つのコンスルーの側面の四角い穴は両方同じ向きとなるようにします。
+
+![](../images/IMG_0069_e.png)
+
+コンスルーの向きをしっかり確認できたらProMicroとコンスルーを24箇所ハンダ付けします。
 
     ！！！注意！！！
     絶対にPCBとコンスルーをハンダ付けしないでください。
@@ -90,14 +108,16 @@ ProMicroとコンスルーをハンダ付けします。
 トッププレートには向きがあります。斜めの斜線が細かく入った面が表です。
 そしてフレームの幅が広いほうが手前となります。画像のとおりにキースイッチを取り付けてください。
 
-|||
-|---|---|
 |![](../images/IMG_0061_e.png)|![](../images/IMG_0065_e.png)|
+|---|---|
+
 キースイッチを12個取り付け終わったら次にPCBを取り付けます。
 キースイッチのピンの折れ曲がりに気を付けてPCBを取り付けます。
 キースイッチとPCBが隙間なく固定されていることを確認します。
 コンスルーをハンダ付けしたProMicroをPCBに取り付けます。
 ![](../images/IMG_0067_e.png)
+
+---
 
 ## 5. ネジ留め<img src="../images/icon_screw.png" width="32px">
 順にネジを留めていきます。
@@ -111,9 +131,14 @@ ProMicroとコンスルーをハンダ付けします。
 そしてスペーサをボトムプレート表面に3本立て、裏面からネジ留めします。
 使用するスペーサは使用しているキースイッチの種類に応じて違います。
 Cherry MXスイッチの場合はスペーサ(大)、Kailh Chocスイッチの場合はスペーサ(小)を使用します。
-`ここに順にネジ留めしていく画像`
+
+|![](../images/IMG_0080_e.png)|![](../images/IMG_0082_e.png)|
+|---|---|
+
 最後に、トッププレートとPCBをボトムプレートに合わせ、トッププレート表面からネジ留めします。
 Dozen0のハードウェアはこれで完成です。
+
+---
 
 ## 6. QMKのビルド周り
 QMKをビルドしてProMicroに書き込みます。
@@ -131,5 +156,4 @@ keymap.cを自由にカスタマイズしてご使用ください。
 
 ## 7. 完成
 完成です。
-
-`ここに完成した画像`
+![](../images/IMG_0108_e.png)
