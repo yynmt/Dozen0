@@ -2,6 +2,24 @@
 
 ![](../images/buildguide_0-0.jpg)
 
+## 目次
+- [0.事前準備](#0-事前準備)
+  - [キットの内容物](#キットの内容物)
+  - [キット以外に必要な部品](#キット以外に必要な部品)
+  - [必要工具](#必要工具)
+  - [アイコンの説明](#アイコンの説明)
+- [1.ソケットのハンダ付け](#1-ソケットのハンダ付け--)
+- [2.リセットスイッチのハンダ付け](#2-リセットスイッチのハンダ付け--)
+- [3. ProMicroのハンダ付け](#3-promicroのハンダ付け--)
+- [4. スイッチの取り付け](#4-スイッチの取り付け)
+- [5. ネジ留め](#5-ネジ留め)
+- [6. QMKのビルド周り](#6-qmkのビルド周り)
+  - [動作確認](#動作確認)
+  - [QMK Configuratorの利用](#QMK Configuratorの利用)
+  - [QMKビルド環境を構築](#QMKビルド環境を構築)
+  - [QMK参考リンク](#QMK参考リンク)
+- [7. 完成](#7-完成)
+
 ## 0. 事前準備
 
 ### キットの内容物
@@ -29,7 +47,7 @@
 |:---:|---|---:|---|
 |1|キースイッチ|12|Cherry MXもしくはKailh Choc|
 |2|キーキャップ(1U)|12||
-|3|ProMicro|1|[遊舎工房][3a9e7862]より購入可能|
+|3|ProMicro|1||
 |4|コンスルー|2|[遊舎工房][3a9e7862]より購入可能|
 |-|MicroUSBケーブル|1|   |
 
@@ -75,7 +93,7 @@
 
 ---
 
-## 2. リセットスイッチのハンダ付け  <img src="../images/icon_nipper.png" width="32px"> <img src="../images/icon_solder.png" width="32px">
+## 2. リセットスイッチのハンダ付け  <img src="../images/icon_nipper.png" width="32px"><img src="../images/icon_solder.png" width="32px">
 
 　PCBにリセットスイッチをハンダ付けします。
 
@@ -129,7 +147,7 @@ PCBに何度か足を差し込みながら切る長さを確認するとよい�
 
 ---
 
-## 5. ネジ留め<img src="../images/icon_screw.png" width="32px">
+## 5. ネジ留め  <img src="../images/icon_screw.png" width="32px">
 　順にネジを留めていきます。
 
 ![](../images/buildguide_5-1.jpg)
@@ -156,23 +174,35 @@ Dozen0のハードウェアはこれで完成です。
 
 ---
 
-## 6. QMKのビルド周り
-ここは後日書く。
+## 6. ファームウェアの書き込み
+　完成したDozen0のハードウェアにファームウェアを書き込んでマクロパッドとして利用できるようにします。Dozen0はQuantum Mechanical Keyboard Firmware(以下、QMK)に対応しており、自由にキーレイアウトをカスタマイズすることが可能です。
 
-QMKをビルドしてProMicroに書き込みます。
-QMKのビルド環境に関しては以下を参考に構築してください。
+### 動作確認
+　動作確認のためデフォルトのファームウェアを書き込むには、[QMK Toolbox](https://github.com/qmk/qmk_toolbox)を利用して以下のファームウェアファイル(.hex)をDozen0に取り付けたProMicroに書き込むと動作確認を行うことができます。
 
-ここに参考URL
+- Dozen0 デフォルトファームウェア - [dozen0_default.hex](https://qmk.fm/compiled/dozen0_default.hex)
 
-デフォルトのキー配列は以下のとおりです。
+　デフォルトのキー配列は以下のとおりです。
 
-`ここにデフォルトのキー配列の画像`
+![](../images/default_layout.png)
 
-keymap.cを自由にカスタマイズしてご使用ください。
+　キーレイアウトをカスタマイズするにQMKのビルドが必要となります。QMKのビルドには2つの方法があります。
 
-    make dozen0:default
+### QMK Configuratorの利用
+　[QMK Configurator](https://config.qmk.fm/)はPCブラウザ上で動作するQMKのビルド環境です。QMK Configuratorを利用して得られたファームウェアファイル(.hex)は前述のQMK Toolboxを利用することでDozen0に取り付けたProMicroに書き込むことができます。
+
+### QMKビルド環境を構築
+　QMKのビルドと書き込みを行う環境をお使いのコンピュータに構築し、ビルドから書き込みまで一連の作業をまとめて行う方法です。詳しい方法はお使いのコンピュータの環境により大きく異なるため、ご自身でお調べ下さい。
+
+### QMK参考リンク
+- [QMK Configurator - https://config.qmk.fm/](https://config.qmk.fm/)
+- [QMK Toolbox - https://github.com/qmk/qmk_toolbox](https://github.com/qmk/qmk_toolbox)
+- [Quantum Mechanical Keyboard Firmware - https://github.com/qmk/qmk_firmware/](https://github.com/qmk/qmk_firmware/)
+- [QMK Firmware - https://docs.qmk.fm/](https://docs.qmk.fm/)
+- [Install Build Tools - QMK Firmware - https://docs.qmk.fm/#/getting_started_build_tools](https://docs.qmk.fm/#/getting_started_build_tools)
+
+---
 
 ## 7. 完成
-完成です。
-![](../images/IMG_0108_e.png)
+　あなただけのオリジナルマクロパッドの完成です。
 ![](../images/buildguide_7-1.jpg)
