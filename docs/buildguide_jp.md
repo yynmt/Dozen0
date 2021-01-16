@@ -36,11 +36,12 @@
 |5|MXソケット|12||
 |6|Chocソケット|12||
 |7|リセットスイッチ|1|6x3mm タクトスイッチ|
-|8|ネジ|12|M2 4mm(予備2を含む)|
-|9|スペーサ(大)|3|M2 7mm|
-|10|スペーサ(小)|3|M2 4mm|
-|11|スペーサ(黒)|2|M2 6mm|
-|12|ゴム足|4|   |
+|8|ネジ|12|M2 4mm(予備2を含む) ※[遊舎工房](https://yushakobo.jp/shop/dozen0/)より購入の際は予備は含まれません|
+|9|スペーサ(大)|3|M2 7mm ※[遊舎工房](https://yushakobo.jp/shop/dozen0/)より購入の際は六角スペーサになります|
+|10|スペーサ(小)|3|M2 4mm ※[遊舎工房](https://yushakobo.jp/shop/dozen0/)より購入の際は六角スペーサになります|
+|11|スペーサ(黒)|2|M2 6mm ※[遊舎工房](https://yushakobo.jp/shop/dozen0/)より購入の際は銀色の丸形スペーサになります|
+|12|ゴム足|4|※[遊舎工房](https://yushakobo.jp/shop/dozen0/)より購入の際は形状が異なります|
+
 
 ### キット以外に必要な部品
 ![](../images/buildguide_0-2.jpg)
@@ -49,9 +50,10 @@
 |:---:|---|---:|---|
 |1|キースイッチ|12|Cherry MXもしくはKailh Choc|
 |2|キーキャップ(1U)|12||
-|3|ProMicro|1|[遊舎工房](https://yushakobo.jp/shop/promicro-spring-pinheader/)より購入可能|
-|4|コンスルー|2|[遊舎工房](https://yushakobo.jp/shop/a01mc-00/)より購入可能|
-|-|MicroUSBケーブル|1|   |
+|3|ProMicro|1|[遊舎工房](https://yushakobo.jp/shop/promicro-spring-pinheader/)より購入可能 ※[遊舎工房](https://yushakobo.jp/shop/dozen0/)より購入の際はキットに含まれています|
+|4|コンスルー|2|[遊舎工房](https://yushakobo.jp/shop/a01mc-00/)より購入可能 ※[遊舎工房](https://yushakobo.jp/shop/dozen0/)より購入の際はキットに含まれています|
+|-|MicroUSBケーブル|1||
+
 
 ### 必要工具
 - 温調ハンダごて
@@ -136,7 +138,8 @@ PCBの角に近い側のスルーホールは熱が逃げやすくハンダの�
 ![](../images/buildguide_4-1.jpg)
 
 　トッププレートには向きがあります。斜めの斜線が細かく入った面が表です。
-そしてフレームの幅が広いほうが手前となります。画像のとおりにキースイッチを取り付けてください。
+裏面に◤◢◤◢◤◢◤◢の記載があるフレームの幅が広いほうが手前となります。
+画像のとおりにキースイッチを取り付けてください。
 
 |![](../images/buildguide_4-2.jpg)|![](../images/buildguide_4-3.jpg)|
 |---|---|
@@ -160,8 +163,8 @@ PCBの角に近い側のスルーホールは熱が逃げやすくハンダの�
 
 ![](../images/buildguide_5-2.jpg)
 
-　次に、ボトムプレート裏面にゴム足を貼り付けます
-大きな斜線のある面が裏面です。
+　次に、ボトムプレート裏面にゴム足を貼り付けます。
+斜線のある面が裏面です。
 
 ![](../images/buildguide_5-3.jpg)
 
