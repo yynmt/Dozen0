@@ -185,7 +185,7 @@ Dozen0のハードウェアはこれで完成です。
 　完成したDozen0のハードウェアにファームウェアを書き込んでマクロパッドとして利用できるようにします。Dozen0はQuantum Mechanical Keyboard Firmware(以下、QMK)に対応しており、自由にキーレイアウトをカスタマイズすることが可能です。
 
 ### Remap
-　Dozen0はQMKに対応しており、Remapに対応しています。ChromeからRemapにアクセスすることでファームウェアの書き込みとキーレイアウトのカスタマイズを行うことができます。
+　Dozen0はRemapに対応しています。ChromeからRemapにアクセスすることでファームウェアの書き込みとキーレイアウトのカスタマイズを行うことができます。
 
 - [Remap](https://remap-keys.app/)
 - [Dozen0 - Remap](https://remap-keys.app/catalog/zSCjvxy9xct3SJ7d3jn1)
