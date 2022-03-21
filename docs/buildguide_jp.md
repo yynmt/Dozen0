@@ -186,7 +186,7 @@ Dozen0のハードウェアはこれで完成です。
 ### 動作確認
 　動作確認のためデフォルトのファームウェアを書き込むには、[QMK Toolbox](https://github.com/qmk/qmk_toolbox)を利用して以下のファームウェアファイル(.hex)をDozen0に取り付けたProMicroに書き込むと動作確認を行うことができます。
 
-- Dozen0 デフォルトファームウェア - [dozen0_default.hex](https://qmk.fm/compiled/dozen0_default.hex)
+- Dozen0 デフォルトファームウェア - [dozen0_default.hex](https://qmk.fm/compiled/yynmt_dozen0_default.hex)
 
 　デフォルトのキー配列は以下のとおりです。
 
