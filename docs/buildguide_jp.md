@@ -14,10 +14,11 @@
 - [4. スイッチの取り付け](#4-スイッチの取り付け)
 - [5. ネジ留め](#5-ネジ留め--)
 - [6. ファームウェアの書き込み](#6-ファームウェアの書き込み)
-  - [動作確認](#動作確認)
-  - [QMK Configuratorの利用](#qmk-configuratorの利用)
-  - [QMKビルド環境を構築](#QMKビルド環境を構築)
-  - [QMK参考リンク](#QMK参考リンク)
+  - [Remap](#remap)
+  - [QMK Toolbox](#qmk-toolbox)
+    - [QMK Configurator](#qmk-configurator)
+    - [QMKビルド環境](#qmkビルド環境)
+  - [QMK参考リンク](#qmk参考リンク)
 - [7. 完成](#7-完成)
 
 ---
@@ -183,8 +184,14 @@ Dozen0のハードウェアはこれで完成です。
 ## 6. ファームウェアの書き込み
 　完成したDozen0のハードウェアにファームウェアを書き込んでマクロパッドとして利用できるようにします。Dozen0はQuantum Mechanical Keyboard Firmware(以下、QMK)に対応しており、自由にキーレイアウトをカスタマイズすることが可能です。
 
-### 動作確認
-　動作確認のためデフォルトのファームウェアを書き込むには、[QMK Toolbox](https://github.com/qmk/qmk_toolbox)を利用して以下のファームウェアファイル(.hex)をDozen0に取り付けたProMicroに書き込むと動作確認を行うことができます。
+### Remap
+　Dozen0はQMKに対応しており、Remapに対応しています。ChromeからRemapにアクセスすることでファームウェアの書き込みとキーレイアウトのカスタマイズを行うことができます。
+
+- [Remap](https://remap-keys.app/)
+- [Dozen0 - Remap](https://remap-keys.app/catalog/zSCjvxy9xct3SJ7d3jn1)
+
+### QMK Toolbox
+　デフォルトのファームウェアを書き込むには、[QMK Toolbox](https://github.com/qmk/qmk_toolbox)を利用して以下のファームウェアファイル(.hex)をDozen0に取り付けたProMicroに書き込むと動作確認を行うことができます。
 
 - Dozen0 デフォルトファームウェア - [dozen0_default.hex](https://qmk.fm/compiled/yynmt_dozen0_default.hex)
 
@@ -192,12 +199,12 @@ Dozen0のハードウェアはこれで完成です。
 
 ![](../images/default_layout.png)
 
-　キーレイアウトをカスタマイズするにQMKのビルドが必要となります。QMKのビルドには2つの方法があります。
+　QMK Toolboxを用いてファームウェアを書き込む場合、キーレイアウトのカスタマイズにはQMKのビルドが必要となります。QMKのビルドにはQMK Configuratorを用いるかQMKビルド環境を自前で構築する方法があります。
 
-### QMK Configuratorの利用
+#### QMK Configurator
 　[QMK Configurator](https://config.qmk.fm/)はPCブラウザ上で動作するQMKのビルド環境です。QMK Configuratorを利用して得られたファームウェアファイル(.hex)は前述のQMK Toolboxを利用することでDozen0に取り付けたProMicroに書き込むことができます。
 
-### QMKビルド環境を構築
+#### QMKビルド環境
 　QMKのビルドと書き込みを行う環境をお使いのコンピュータに構築し、ビルドから書き込みまで一連の作業をまとめて行う方法です。詳しい方法はお使いのコンピュータの環境により大きく異なるため、ご自身でお調べ下さい。
 
 ### QMK参考リンク
